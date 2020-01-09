@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: Open Sans, Arial, sans-serif;
+  min-width: 320px;
 }
 
 @font-face {
@@ -28,7 +29,6 @@ body {
   background-position: center center;
   position: relative;
   background-color: #000000;
-  width: 100%;
 }
 
 .container::after {
@@ -69,6 +69,13 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-container {
+  padding-top: 28px;
 }
 
 .menu,
@@ -96,15 +103,12 @@ a {
   letter-spacing: 4px;
 }
 
-.header-box {
-  padding-top: 28px;
-  padding-left: 65px;
-  padding-right: 65px;
+.menu-block-text {
+  letter-spacing: 1.5px;
 }
 
-.menu-block-text {
+.menu-block:nth-child(1) {
   margin-right: 40px;
-  letter-spacing: 1.5px;
 }
 
 .hone-text {
@@ -172,11 +176,6 @@ a {
   display: block;
 }
 
-body,
-html {
-  overflow-x: hidden;
-}
-
 .text-information {
   text-align: center;
   font-size: 28px;
@@ -210,6 +209,7 @@ html {
   font-size: 14px;
   color: #ffffff;
   padding-left: 15px;
+  padding-right: 15px;
 }
 
 .button {
@@ -228,6 +228,11 @@ html {
   cursor: pointer;
 }
 
+.button-scrol:active,
+.button-scrol:focus {
+  outline: none;
+}
+
 .button:hover {
   background: #7c67b8;
 }
@@ -242,13 +247,19 @@ html {
   background: rgba(10, 7, 7, 0.5);
 }
 
-.arrow {
+.button-scrol-block {
+  padding-bottom: 52px;
+}
+
+.button-scrol {
+  background: none;
+  border: 0;
+  padding: 0;
+  margin-top: 40px;
+  cursor: pointer;
+  display: block;
   margin-right: auto;
   margin-left: auto;
-  display: block;
-  margin-top: 40px;
-  padding-bottom: 52px;
-  cursor: pointer;
 }
 
 .arrow:hover {
@@ -260,11 +271,11 @@ html {
   font-size: 36px;
   font-weight: normal;
   letter-spacing: 0.8px;
-  padding-top: 100px;
   margin-top: 0;
 }
 
 .block-section {
+  padding-top: 100px;
   max-width: 1920px;
   margin-right: auto;
   margin-left: auto;
@@ -288,8 +299,6 @@ html {
 
 .block-container {
   display: block;
-  margin-left: 10px;
-  margin-right: 10px;
   justify-content: center;
 }
 
@@ -299,6 +308,11 @@ html {
   margin-top: 15%;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.gallery-block {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .arrow-style {
@@ -433,6 +447,10 @@ iframe {
   margin-left: 4px;
 }
 
+.socials-item {
+  margin-top: 62px;
+}
+
 .socials-link-text {
   position: absolute;
   width: 1px;
@@ -446,7 +464,6 @@ iframe {
   background-repeat: no-repeat;
   background-size: 60px;
   background-position: center;
-  margin-top: 62px;
 }
 
 .copyright-link {
@@ -459,6 +476,9 @@ iframe {
 
 .copyright {
   margin-top: 55px;
+}
+
+.copyright-block {
   padding-bottom: 20px;
 }
 
