@@ -814,4 +814,9 @@ iframe {
   .copyright {
     margin-top: 20px;
   }
+
+  .gallery-block:nth-child(even) {
+    display: none;
+    background: none;
+  }
 }
