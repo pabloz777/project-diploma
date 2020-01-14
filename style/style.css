@@ -72,9 +72,6 @@ a {
   max-width: 90%;
   margin-left: auto;
   margin-right: auto;
-}
-
-.header-container {
   padding-top: 28px;
 }
 
@@ -441,14 +438,11 @@ iframe {
   list-style-type: none;
   display: flex;
   padding-left: 0;
+  padding-top: 62px;
 }
 
 .socials-item:nth-child(n + 2) {
   margin-left: 4px;
-}
-
-.socials-item {
-  margin-top: 62px;
 }
 
 .socials-link-text {
@@ -474,12 +468,9 @@ iframe {
   font-size: 14px;
 }
 
-.copyright {
-  margin-top: 55px;
-}
-
 .copyright-block {
   padding-bottom: 20px;
+  margin-top: 55px;
 }
 
 @keyframes swing {
